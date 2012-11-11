@@ -7,11 +7,7 @@ JCROM_VERSION := JCROM-$(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR).$(PRODU
 PRODUCT_PROPERTY_OVERRIDES += \
   ro.jcrom.version=$(JCROM_VERSION)
 
-PRODUCT_COPY_FILES +=  \
-    jcrom/common/prebuilt/apps/Superuser.apk:system/app/Superuser.apk
-
 PRODUCT_PACKAGES += \
-    Superuser \
-    Superuser.apk \
-    su
+    XSuperuser \
+    xsu
 
