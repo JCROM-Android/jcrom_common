@@ -11,6 +11,15 @@ PRODUCT_PACKAGES += \
     XSuperuser \
     xsu
 
+PRODUCT_PACKAGES += \
+    jctool \
+    bootsound \
+    stagefright
+
+PRODUCT_PACKAGES += \
+    busybox
+
 PRODUCT_COPY_FILES +=  \
+    jcrom/common/init.jcrom.rc:root/init.jcrom.rc \
     jcrom/common/prebuilt/apps/japanesekeyboard/japanesekeyboard_1.1.apk:system/app/japanesekeyboard_1.1.apk
 

@@ -1,0 +1,43 @@
+
+on post-fs-data
+    # JCROM theme
+    mkdir /data/theme 0775 system system
+    mkdir /data/theme/bootanime 0775 system system
+    mkdir /data/theme/frame 0775 system system
+    mkdir /data/theme/launcher 0775 system system
+    mkdir /data/theme/lockscreen 0775 system system
+    mkdir /data/theme/navikey 0775 system system
+    mkdir /data/theme/notification 0775 system system
+    mkdir /data/theme/wallpaper 0775 system system
+    mkdir /data/theme/screenshot 0775 system system
+    mkdir /data/theme/statusbar 0775 system system
+    mkdir /data/theme/navibar 0775 system system
+    mkdir /data/theme/simeji 0775 system system
+    mkdir /data/theme/atok 0775 system system
+    mkdir /data/theme/sounds 0775 system system
+    mkdir /data/theme/sounds/effect 0775 system system
+    mkdir /data/theme/sounds/bootsound 0775 system system
+    mkdir /data/theme/sounds/camera 0775 system system
+    mkdir /data/theme/font 0775 system system
+    mkdir /data/theme/flickwnn 0775 system system
+
+
+on property:init.svc.bootanim=running
+    start bootsound
+
+on property:dev.bootcomplete=1
+    stop bootsound
+
+service bootsound /system/bin/bootsound
+    class main
+    user media
+    group audio
+    disabled
+    oneshot
+
+service jctool system/bin/jctool
+	class core
+	user root
+	group root
+	oneshot
+
