@@ -20,7 +20,8 @@ PRODUCT_PACKAGES += \
     busybox
 
 PRODUCT_PACKAGES += \
-    VisualThemeSelector
+    VisualThemeSelector \
+    JCWallpaper
 
 PRODUCT_COPY_FILES +=  \
     jcrom/common/init.jcrom.rc:root/init.jcrom.rc \
