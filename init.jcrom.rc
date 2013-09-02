@@ -1,4 +1,3 @@
-import /init.superuser.rc
 
 on post-fs-data
     # JCROM theme
