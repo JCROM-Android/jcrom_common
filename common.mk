@@ -8,10 +8,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
   ro.jcrom.version=$(JCROM_VERSION)
 
 PRODUCT_PACKAGES += \
-    XSuperuser \
-    xsu
-
-PRODUCT_PACKAGES += \
     jctool \
     bootsound \
     stagefright
