@@ -20,6 +20,7 @@ on post-fs-data
     mkdir /data/theme/sounds/camera 0775 system system
     mkdir /data/theme/font 0775 system system
     mkdir /data/theme/flickwnn 0775 system system
+    mkdir /data/theme/settings 0775 system system
 
 
 on property:init.svc.bootanim=running
