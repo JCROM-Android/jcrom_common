@@ -17,7 +17,8 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     VisualThemeSelector \
-    JCWallpaper
+    JCWallpaper \
+    JCLauncher
 
 PRODUCT_COPY_FILES +=  \
     jcrom/common/init.jcrom.rc:root/init.jcrom.rc \
