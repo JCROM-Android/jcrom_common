@@ -13,8 +13,12 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     VisualThemeSelector \
-    JCWallpaper \
+    JCWallpaper
+
+ifneq ($(TARGET_PRODUCT),aosp_manta)
+PRODUCT_PACKAGES += \
     JCLauncher
+endif
 
 PRODUCT_COPY_FILES +=  \
     jcrom/common/init.jcrom.rc:root/init.jcrom.rc \
