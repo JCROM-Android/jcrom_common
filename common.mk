@@ -32,3 +32,4 @@ PRODUCT_COPY_FILES += \
     jcrom/common/prebuilt/bin/backuptool.functions:system/bin/backuptool.functions \
     jcrom/common/prebuilt/bin/template.sh:system/addon.d/template.sh
 
+PRODUCT_COPY_FILES += jcrom/common/prebuilt/etc/apns-conf.xml:system/etc/apns-conf.xml
