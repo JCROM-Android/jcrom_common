@@ -13,12 +13,8 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     VisualThemeSelector \
-    JCWallpaper
-
-ifneq ($(TARGET_PRODUCT),aosp_manta)
-PRODUCT_PACKAGES += \
+    JCWallpaper \
     JCLauncher
-endif
 
 PRODUCT_PACKAGES += \
     audio_effects.conf
