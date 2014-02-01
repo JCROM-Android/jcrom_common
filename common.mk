@@ -3,6 +3,9 @@ include $(TOPDIR)jcrom/common/version.mk
 PRODUCT_PROPERTY_OVERRIDES += \
   ro.jcrom.version=$(JCROM_VERSION)
 
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.build.selinux=1
+
 PRODUCT_PACKAGES += \
     jctool \
     bootsound \
