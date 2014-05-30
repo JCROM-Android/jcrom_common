@@ -20,8 +20,7 @@ PRODUCT_PACKAGES += \
     JCLauncher
 
 PRODUCT_PACKAGES += \
-    Browser \
-    Gallery2
+    Browser
 
 PRODUCT_PACKAGES += \
     audio_effects.conf
