@@ -35,3 +35,5 @@ PRODUCT_COPY_FILES += \
     jcrom/common/prebuilt/bin/template.sh:system/addon.d/template.sh
 
 PRODUCT_COPY_FILES += jcrom/common/prebuilt/etc/apns-conf.xml:system/etc/apns-conf.xml
+
+PRODUCT_COPY_FILES += jcrom/common/prebuilt/media/bootanimation.zip:system/media/bootanimation.zip
