@@ -29,11 +29,6 @@ PRODUCT_COPY_FILES +=  \
     jcrom/common/init.jcrom.rc:root/init.jcrom.rc \
     jcrom/common/prebuilt/apps/japanesekeyboard/japanesekeyboard_1.1.apk:system/app/japanesekeyboard_1.1.apk
 
-PRODUCT_COPY_FILES += \
-    jcrom/common/prebuilt/bin/backuptool.sh:system/bin/backuptool.sh \
-    jcrom/common/prebuilt/bin/backuptool.functions:system/bin/backuptool.functions \
-    jcrom/common/prebuilt/bin/template.sh:system/addon.d/template.sh
-
 PRODUCT_COPY_FILES += jcrom/common/prebuilt/etc/apns-conf.xml:system/etc/apns-conf.xml
 
 PRODUCT_COPY_FILES += jcrom/common/prebuilt/media/bootanimation.zip:system/media/bootanimation.zip
