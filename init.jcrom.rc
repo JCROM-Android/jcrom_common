@@ -22,23 +22,8 @@ on post-fs-data
     mkdir /data/theme/flickwnn 0775 system system
     mkdir /data/theme/settings 0775 system system
 
-
-on property:init.svc.bootanim=running
-    start bootsound
-
-on property:dev.bootcomplete=1
-    stop bootsound
-
-service bootsound /system/bin/bootsound
-    class main
-    user media
-    group audio
-    disabled
-    oneshot
-
 service jctool system/bin/jctool
 	class core
 	user root
 	group root
 	oneshot
-
