@@ -6,6 +6,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.build.selinux=1
 
+#PRODUCT_PROPERTY_OVERRIDES += \
+#    fw.power_user_switcher=true
+
 PRODUCT_PACKAGES += \
     japanesekeyboard_1.1
 
